@@ -13,7 +13,7 @@ namespace DatabaseManager
 {
     public partial class Form1 : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;initial catalog=CarPrices;integrated security=true");
+        SqlConnection con = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;initial catalog=NORTHWND;integrated security=true");
 
         public Form1()
         {
@@ -58,8 +58,8 @@ namespace DatabaseManager
 
         private void btnSelect_Click(object sender, EventArgs e)
         {
-            tbxQuery.Text= "Select * from Cars";
-            string sql = "Select * from Cars";
+            tbxQuery.Text= "Select * from Customers";
+            string sql = "Select * from Customers";
             display(sql);
         }
     }
